@@ -1,0 +1,40 @@
+.games-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 2%;
+}
+
+.no-games {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 40px 0;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .reset-button {
+    background: transparent;
+    border: 1px solid #F0DA7D;
+    color: #F0DA7D;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #F0DA7D;
+      color: #1c1c1c;
+    }
+  }
+}
+
+.loading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}

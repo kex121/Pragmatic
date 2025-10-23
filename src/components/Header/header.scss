@@ -1,0 +1,107 @@
+.app-header {
+  display: flex;
+  gap: 10px;
+  height: 100px;
+  box-sizing: border-box;
+  
+  .left-block,
+  .right-block {
+    background: #1c1c1c;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    border-radius: 10px;
+  }
+
+  .left-block {
+    width: 80%;
+  }
+
+  .right-block {
+    width: 30%;
+  }
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.label {
+  color: #fff;
+  font-size: 0.9em;
+  margin: 2px 0;
+}
+
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+
+  .search-input {
+    flex: 1;
+    border: 1px solid #f0da7d;
+    color: #fff;
+    height: 17px;
+    padding: 10px 16px 10px 40px;
+    width: 80%;
+
+    &::placeholder {
+      padding-left: 0;
+    }
+  }
+
+  .search-btn {
+    border: 1px solid #f0da7d;
+    background-color: #f0da7d;
+    color: #1c1c1c;
+    font-weight: 700;
+    padding: 8px 16px;
+    height: 36px;
+    cursor: pointer;
+    text-transform: uppercase;
+    min-width: 100px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: transparent;
+      color: #f0da7d;
+    }
+  }
+}
+
+.game-type-filter {
+  border: 1px solid #f0da7d;
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 8px;
+  height: 36px;
+}
+
+.input-with-icon {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.7;
+    filter: brightness(0.9);
+  }
+
+  .search-input {
+    background: transparent;
+  }
+}
